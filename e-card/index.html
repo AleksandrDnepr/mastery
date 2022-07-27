@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../global.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="left-menu">
+                        <div class="title">
+                            <label>
+                                <img src="icons/icon-wallet.svg" alt="wallet" />
+                                <span>E-Cards</span>
+                            </label>
+                        </div>
+                        <div class="menu-list">
+                            <div class="menu-item transactions">
+                                <div class="menu-item-title">
+                                    <a href="#">
+                                        <label>
+                                            <img
+                                                src="./icons/icon-arrows.svg"
+                                                alt=""
+                                            />
+                                            <span>Transactions</span>
+                                        </label>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="menu-item card">
+                                <div class="menu-item-block active">
+                                    <div class="menu-item-title">
+                                        <a href="#">
+                                            <label>
+                                                <img
+                                                    src="./icons/icon-card.svg"
+                                                    alt=""
+                                                />
+                                                <span>Cards</span>
+                                            </label>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-menu">
+                            <div><hr /></div>
+                            <div class="user-info">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img
+                                            src="./icons/icon-user-logo.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="col">
+                                        <p class="user-name">Itai Bracha</p>
+                                        <p class="user-email">
+                                            Itaibrahca31@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item settings">
+                                <div class="menu-item-block">
+                                    <div class="menu-item-title">
+                                        <a href="#">
+                                            <label>
+                                                <img
+                                                    src="./icons/icon-settings.svg"
+                                                    alt=""
+                                                />
+                                                <span>Settings</span>
+                                            </label>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item logout">
+                                <div class="menu-item-block">
+                                    <div class="menu-item-title">
+                                        <a href="#">
+                                            <label>
+                                                <img
+                                                    src="./icons/icon-logout.svg"
+                                                    alt=""
+                                                />
+                                                <span>Logout</span>
+                                            </label>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col-4">
+                            <h2>Cards</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="bank-card">
+                            <div class="row">
+                                <div class="col-8 balance-info">
+                                    <p>Current Balance</p>
+                                    <p>$4,570,80</p>
+                                </div>
+                                <div class="col-4 bank-card_log">
+                                    <img src="./icons/icon-visa.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p>5294 2436 4780 2468</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <p>NAME</p>
+                                    <p>Itai Bracha</p>
+                                </div>
+                                <div class="col-4">
+                                    <p>Valid Thru</p>
+                                    <p>12/24</p>
+                                </div>
+                                <div class="col-3">
+                                    <p>CVV</p>
+                                    <p>344</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bank-card_empty">
+                            <img src="./icons/icon-add-card.svg" alt="" />
+                            <p>Add new Card</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-4">
+                            <h2>Transactions</h2>
+                        </div>
+                    </div>
+                    <input id="input" type="text" />
+        <button id="find">find</button>
+                    <div class="row">
+                    
+                        <div class="transactions-table">
+                            
+        <table class="table">
+            <table id="test">
+                <tr class="headTable">
+                    <th></th>
+                    <th colspan="2">Name</th>
+                    <th colspan="2">User credentials</th>
+                    <th>Last Transcation</th>
+                    <th>Status</th>
+                    <th>End date</th>
+                    <th>Total used</th>
+                    <th></th>
+                </tr>
+            </table>
+        </table>
+        
+        <script src="table.js"></script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

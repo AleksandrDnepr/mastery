@@ -1,0 +1,390 @@
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,italic,500,500italic,700,700italic&display=swap);
+
+:root {
+  --color-white: #e5e5e5;
+  --color-green: #00856f;
+  --color-header: rgba(0, 133, 111, 0.19);
+  --color-grey: #c3c3c3;
+  --color-blue: rgb(45, 131, 243);
+  --transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+}
+input {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+.modal {
+  display: none;
+}
+
+.modal_open {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  margin: 0px 0px 0px 550px;
+  z-index: 5;
+  background-color: white;
+  box-shadow: 3px 3px var(--color-green);
+}
+
+.content__modal {
+  margin: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 1366px;
+  margin: 0 auto;
+  font-family: "DM+Sans";
+}
+
+.header__container {
+  z-index: 3;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-header);
+  padding: 10px 123px;
+}
+
+.header__logo img {
+  width: 134px;
+  height: 19px;
+}
+
+.header__burger {
+  display: none;
+}
+
+.menu__list {
+  display: flex;
+  padding-inline-start: 0%;
+  gap: 15px;
+}
+
+@media (max-width: 767px) {
+  .header__burger {
+    margin: 10px;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .menu__list.show {
+    margin: 30px;
+    width: 120px;
+    height: 100px;
+    position: fixed;
+    display: inline;
+    text-align: center;
+    padding: 10px;
+    background-color: aquamarine;
+  }
+  .menu__list {
+    display: none;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.menu__item {
+  color: var(--color-green);
+}
+
+.menu__link {
+  padding: 26px 0;
+  transition: all var(--transition);
+}
+
+.menu__link:hover {
+  border-bottom: 1px solid var(--color-green);
+}
+
+.header__logo {
+  margin: 10px 0px;
+}
+
+.header__button {
+  border: solid 1px var(--color-green);
+  border-radius: 10px;
+  color: var(--color-green);
+  height: 30px;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  transition: background-color var(--transition);
+  cursor: pointer;
+}
+
+.header__button:hover {
+  background-color: rgba(0, 133, 111, 0.25);
+}
+
+.header-list {
+  display: flex;
+}
+
+.content__first {
+  display: flex;
+  justify-content: flex-start;
+  gap: 150px;
+  background-color: var(--color-header);
+  padding: 50px 123px;
+}
+
+.content__first-second {
+  max-width: 420px;
+}
+
+.content__first-third {
+  max-width: 450px;
+}
+
+.content__first-fourth {
+  border-radius: 15px;
+  color: white;
+  background-color: var(--color-green);
+  display: flex;
+  justify-content: flex-end;
+  width: 250px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.content__first-fourth input {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.content__first-image {
+  width: 420px;
+  height: 547px;
+  background-image: url("images/image.png");
+  max-height: 495px;
+}
+
+.content__second {
+  display: flex;
+  z-index: 2;
+  background-color: #fffaf1;
+  justify-content: center;
+  padding: 30px;
+  margin: -50px 150px -50px 150px;
+  box-shadow: 0 4px 2px -2px rgba(128, 128, 128, 0.2);
+}
+
+.content__third {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 113px 10px 113px;
+  margin-bottom: 30px;
+  background-color: #f7f9f9;
+  border: 4px solid var(--color-blue);
+}
+
+.content__fourth {
+  display: flex;
+  padding: 70px 123px;
+  justify-content: space-between;
+  background-color: #fffaf1;
+}
+
+.author-4 {
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+.content__fourth-col-6 {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.content__fourth-image {
+  margin: 20px 0px;
+  width: 400px;
+  height: 300px;
+  background-image: url("images/happy-doctor-holding-a-clipboard-with-patients.png");
+}
+
+.content__fifth-image {
+  margin: 20px 0px;
+  width: 400px;
+  height: 300px;
+  background-image: url("images/image2.png");
+}
+
+.content__fifth {
+  display: flex;
+  padding: 10px 123px;
+  justify-content: space-around;
+}
+
+.content__third-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content__third-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.content__third-info {
+  display: flex;
+  justify-content: center;
+}
+
+.content__third-item {
+  max-width: 347px;
+  background-color: white;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+.content__second-col {
+  margin: 30px;
+  flex-direction: column;
+}
+
+.second-col__price {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.second-col__text {
+  color: var(--color-green);
+}
+
+.content__second-col:nth-child(2) {
+  padding: 0 30px;
+  border-left: 1px solid var(--color-grey);
+  border-right: 1px solid var(--color-grey);
+}
+
+.content__first-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 605px;
+}
+
+.first {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.second {
+  font-size: 52px;
+}
+
+.third {
+  font-size: 18px;
+}
+.fourth {
+  text-align: left;
+}
+
+.footer {
+  display: flex;
+  background-color: var(--color-green);
+  justify-content: space-between;
+  padding: 10px 123px;
+}
+
+.footer__icons {
+  display: flex;
+  margin: 20px;
+}
+
+.footer__button-logo {
+  margin: 10px;
+}
+
+.footer__icons-item {
+  margin: 20px;
+  vertical-align: middle;
+}
+
+.footer__button {
+  border: solid 1px var(--color-green);
+  border-radius: 10px;
+  color: white;
+  background-color: var(--color-green);
+  display: flex;
+  cursor: pointer;
+}
+
+.footer__icon-block-item {
+  margin: 10px 0px;
+  color: white;
+}
+
+.image {
+  width: auto;
+  padding: 0px 50px;
+}
+
+.content__fifth-col-6 {
+  margin: 20px 30px 20px 0px;
+}
+
+.content__fifth-row {
+  margin: 30px 0px;
+  max-width: 300px;
+}
+
+.fifth-row__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.row-4 {
+  padding: 20px;
+}
+.text-4 {
+  font-size: 16px;
+}
+
+.title-4 {
+  font-size: 40px;
+  padding-top: 0;
+}
+
+.author {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer__logo {
+  margin: 10px 0px;
+}

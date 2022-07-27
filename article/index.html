@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <div class="articleTitle">
+                    <h1>
+                        USING HASKELL <br />
+                        WITH 5- TO 7-YEAR-OLDS
+                    </h1>
+                    <h5>
+                        Ian Benson and Jenny Cane show how Haskell helps
+                        learners to reason symbolically with Cuisenaire-Gattegno
+                        Mathematics: a proven approach to teaching algebra
+                        before arithmetic
+                    </h5>
+                    <h8 class="author"
+                        ><b>STORY BY</b> Ian Benson and Jenny Cane</h8
+                    >
+                </div>
+
+                <div class="container">
+                    <div class="column col-4">
+                        <p>
+                            <img
+                                class="firstLetter"
+                                src="images\LetA.jpg"
+                                alt="Test"
+                            />
+                            t Bursted Wood Primary School,children in key stage
+                            1 had already embarked on a secure mathematical
+                            journey, putting algebra at the heart of the
+                            curriculum. The demands of the 2014 National
+                            Curriculum meant that in Year 1 children were
+                            expected to be taught to use all four arithmetic
+                            operations, and fractions, as operators. As a
+                            result, Bursted Wood adopted a series of textbooks
+                            written by Caleb Gattegno called Numbers in Colours.
+                            These textbooks use Cuisenaire rods to encourage the
+                            learner to explore patterns, and then to give letter
+                            code names to the patterns, and record the
+                            relationships between them with equations. It is
+                            only after the letter code exploration that they
+                            finally use a rod as a unit of measure (e.g. white
+                            representing one), and transform their equations
+                            into arithmetic. Very early on in Year 1, children
+                            are able to read and write a variety of complex
+                            algebraic
+                            <figure>
+                                <img
+                                    class="picture"
+                                    src="images\columnsColor.jpg"
+                                    alt="Test"
+                                />
+                                <figcaption>
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                The ten Cuisenaire rods arranged
+                                                in order as a staircase with
+                                                step size White.</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </p>
+                    </div>
+                    <div class="column col-4 center">
+                        <p>
+                            equations using plus, minus, multiply,and fractions
+                            as operators, and translate these into arithmetic.
+                            The results had been impressive throughout key stage
+                            1. In Year 2 we wanted to take it a step further by
+                            running computing lessons using the same use of
+                            natural language and level of sophistication.
+                        </p>
+                        <h3>Why Haskell?</h3>
+                        <p>
+                            Haskell is closely aligned to conceptual mathematics
+                            and number theory, the inspiration for Gattegno
+                            Mathematics. It has four attributes that make it
+                            particularly appropriate for mathematics education:
+                        </p>
+                        <ul>
+                            <li>
+                                <span
+                                    >Its syntax is very close to traditional
+                                    mathematical notation (but beware that it
+                                    can be too terse).</span
+                                >
+                            </li>
+                            <li>
+                                <span>
+                                    Variables are statically typed, which means
+                                    that programmers are protected by the
+                                    compiler from passing invalid information as
+                                    an argument (input) or output value.</span
+                                >
+                            </li>
+                            <li>
+                                <span>
+                                    The Haskell interpreter evaluates functions
+                                    ‘lazily’, only when required. This makes it
+                                    possible to program infinite data structures
+                                    in finite memory.</span
+                                >
+                            </li>
+                            <li>
+                                <span>
+                                    Information is passed from the arguments to
+                                    functions by pattern matching. This is an
+                                    intuitive way for programmers to envisage
+                                    and reason about the behaviour of their
+                                    programs.</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column col-4">
+                        <figure>
+                            <img
+                                class="picture"
+                                src="images\Math.jpg"
+                                alt="Test"
+                            />
+                            <figcaption>
+                                <ul>
+                                    <li>
+                                        <span>
+                                            Equivalent expressions using
+                                            Gattegno’s rod codes to represent
+                                            the relationship between a rod and
+                                            equivalent trains of one colour
+                                        </span>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <h3>Starting with a staircase</h3>
+                        <p>
+                            To start, we went back to a familiar pattern that
+                            Gattegno introduces in the textbooks, called a
+                            staircase. This is built from one rod of each colour
+                            arranged in size order (figure 1). The children were
+                            able to physically build the staircase. However,
+                            because they were so familiar with the pattern, they
+                            could also access it virtually, which would help
+                            with debugging and logical reasoning later. A
+                            role-play game to establish computational thinking
+                            was introduced before any actual programming began.
+                            This allowed the children to familiarise themselves
+                            with the function calls successor and predecessor
+                            (succ, pred) while traversing the staircase. The
+                            children would take turns to ask each other
+                            questions such as succ White (answer Red) or pred
+                            Orange(answer Blue). To help the children access the
+                            new programming vocabulary, one child
+                        </p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="column col-8">
+                        <div class="column-second">
+                            <figure>
+                                <img
+                                    class="picture"
+                                    src="images\dataColour.jpg"
+                                    alt="Test"
+                                />
+                                <figcaption>
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                Transcript of a conversation
+                                                about program behaviour</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="column-second">
+                            <div class="column-second_item">
+                                <p>
+                                    would take the role of the ‘engine’ and the
+                                    other ‘interpreter’. This was extended to
+                                    succ $ succ (successor of successor) which
+                                    uses function composition $. Some children
+                                    could creatively enjoy inventing functions
+                                    such as succ $ succ $ succ White to test the
+                                    technique. The children experimented by
+                                    writing down their calls before building
+                                    themselves a rod calculator in Haskell. The
+                                    language soon became a natural part of
+                                    lessons and meant that it was easy to
+                                    progress to the next step.
+                                </p>
+                            </div>
+                            <div class="column-second_item center">
+                                <p>
+                                    run, and that this would require carefully
+                                    debugging and retyping. The children could
+                                    spot bugs in the engine because they had
+                                    already worked out the answer. The staircase
+                                    was a familiar pattern, so they could
+                                    predict what the output should be. Children
+                                    were also able to edit the Colour data type
+                                    to model odd or even staircases and test
+                                    their functions to see what the effect would
+                                    be on the derived successor function. A
+                                    transcript (see insert) shows a pupil
+                                    working with the
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column-second dotted">
+                            <h4>
+                                SOME CHILDREN COULD CREATIVELY ENJOY INVENTING
+                                FUNCTIONS
+                            </h4>
+                        </div>
+                        <div class="column-second">
+                            <div class="column-second_item">
+                                <h6>Programming</h6>
+                                <p>
+                                    Very soon the children were able to
+                                    construct their own rod calculator in
+                                    Haskell, by first constructing the engine
+                                    using the Colour data type. Then the
+                                    children asked the same role-play questions,
+                                    this time by typing the language into the
+                                    interpreter window. It soon became apparent
+                                    that errors in the engine meant that the
+                                    interpreter would not
+                                </p>
+                            </div>
+                            <div class="column-second_item center">
+                                <p>
+                                    number names for the rods, measured with
+                                    White rather than the colour names. He
+                                    becomes aware as he is speaking that the
+                                    version of the succ function that works for
+                                    a staircase with a step size White is
+                                    distinct from the version of succ in an even
+                                    staircase, and he corrects himself. It is
+                                    clear to see that he has constructed an
+                                    image of the staircase and is virtually
+                                    traversing it.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column-second">
+                            <figure>
+                                <img
+                                    class="picture"
+                                    src="images\Dialog.jpg"
+                                    alt="Test"
+                                />
+                                <figcaption>
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                Transcript of a conversation
+                                                about program behaviour</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="column col-4">
+                        <div class="column-second_desc">
+                            <div class="where__header">
+                                <h2 class="where">WHERE TO GO NEXT</h5>
+                            </div>
+                            <div class="whereList">
+                                <div class="where-header">
+                                <p class="where-to">
+                                    Many Cuisenaire and Gattegno resources can
+                                    be found online:
+                                </p></div>
+                                <ul class="whereList">
+                                    <li class="whereList-item">
+                                        New developments in arithmetic teaching
+                                        in Britain: introducing the concept of
+                                        ‘set’ helloworld.cc/2pYFgOw
+                                    </li>
+                                    <li class="whereList-item">
+                                        The common sense of teaching
+                                        mathematics: helloworld.cc/2p9dyKO
+                                    </li>
+                                    <li class="whereList-item">
+                                        Gattegno Mathematics, Book 1:
+                                        helloworld.cc/2qz7xZe
+                                    </li>
+                                    <li class="whereList-item">
+                                        Virtual Rods: helloworld.cc/2pI8ctc
+                                    </li>
+                                    <li class="whereList-item">
+                                        Sample code for these exercises:
+                                        helloworld.cc/2pFyx9j
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column-second_desc">
+                            <h5>Calculating</h5>
+                            <p>
+                                To build the rod arithmetic calculator, the
+                                pupil reuses the equations that they studied in
+                                Year 1. Gattegno’s definitions lie in the
+                                algebraic domain. Programming illustrates the
+                                distinction between algebra and arithmetic.
+                                Making this clear is crucial to investigating
+                                the level of abstraction that the learner has
+                                reached. The figure shows a rod arithmetic
+                                calculator constructed after four terms of
+                                Gattegno Mathematics. The values associated with
+                                the rod code letters are modelled as constant
+                                functions in Haskell. Nine equations are derived
+                                from Gattegno’s equivalent expressions. The
+                                tenth, which binds an integer value to the code
+                                for White, shows the choice of measuring unit,
+                                which fixes the values of the other codes.By
+                                introducing Haskell to the children we have been
+                                able to take the mathematics that the children
+                                are familiar with and successfully and
+                                creatively introduce programming functions. We
+                                have been able to provide both the teacher and
+                                child with a rich situation, allowing them to
+                                think both mathematically and computationally.
+                                It is exciting to think where our investigations
+                                may lead us to next!
+                            </p>
+                            <mark>(HW)</mark>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

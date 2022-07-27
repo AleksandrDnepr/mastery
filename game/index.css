@@ -1,0 +1,68 @@
+.cards {
+    font-size: 32px;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 10px;
+    text-align: center;
+    content-visibility: hidden;
+    transition: 2s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.start {
+    display: flex;
+    margin-left: 500px;
+}
+
+#timer {
+    display: flex;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20%;
+    font-size: 100px;
+    text-align: center;
+}
+
+.cards span {
+    position: relative;
+    top: 30px;
+}
+
+.single_card {
+    background-color: blue;
+    content-visibility: visible;
+    transition: 2s;
+}
+
+.single_card2 {
+    background-color: green;
+    content-visibility: visible;
+    transition: 1s;
+}
+
+.row_6 {
+    display: flex;
+}
+
+.container__cards {
+    margin: 50px;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hide_cards {
+    background-color: white;
+    content-visibility: hidden;
+}

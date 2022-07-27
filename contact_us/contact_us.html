@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="contact_us.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="form">
+            <div class="form">
+                <h1>Contact us</h1>
+                <h5>
+                    Need an experienced and skilled hand with custom IT
+                    projects? Fill out the form to get a free consultation.
+                </h5>
+                <div class="form__first">
+                    <div class="form__col-6">
+                        <div class="col-3">
+                            <label for="compName">Your company name*</label>
+                            <input
+                                type="text"
+                                name="compName"
+                                id="compName"
+                                required
+                            />
+                        </div>
+                        <div class="col-3">
+                            <label for="natureOfBusiness"
+                                >Nature of Business*</label
+                            >
+                            <input
+                                type="text"
+                                name="natureOfBusiness"
+                                id="natureOfBusiness"
+                                required
+                            />
+                        </div>
+                        <div class="col-3">
+                            <label for="calendar">Data of registration</label>
+                            <input
+                                type="date"
+                                name="calendar"
+                                id="calendar"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="form__col-6">
+                        <div class="col-3">
+                            <label for="country"
+                                >Country of registration*</label
+                            >
+                            <select name="country" id="country" required>
+                                <option value="pl">Poland</option>
+                                <option value="definitions">Germany</option>
+                                <option value="en">England</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label for="address">Address</label>
+                            <input
+                                type="text"
+                                name="address"
+                                id="address"
+                                required
+                            />
+                        </div>
+                        <div class="col-3">
+                            <label for="postal">Postal code</label>
+                            <input
+                                type="text"
+                                name="postal"
+                                id="postal"
+                                required
+                                pattern="^[A-Za-z]{2} [0-9]{3}$"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="form__second">
+                    <div class="form__col-6">
+                        <div class="col-3">
+                            <label for="contName">Contact name</label>
+                            <input
+                                type="text"
+                                name="contName"
+                                id="contName"
+                                required
+                            />
+                        </div>
+
+                        <div class="col-3">
+                            <label for="contactPhone">Contact phone</label>
+                            <input
+                                type="tel"
+                                name="contactPhone"
+                                id="contactPhone"
+                            />
+                        </div>
+
+                        <div class="col-3">
+                            <label for="email">Email*</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="form__col-6">
+                        <div class="col-3">
+                            <label for="aboutIdea"
+                                >Let’s talk about your idea</label
+                            >
+                            <textarea
+                                name="aboutIdea"
+                                id="aboutIdea"
+                                maxlength="320"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="col-3">
+                            <input
+                                type="range"
+                                name="rang"
+                                id="rang"
+                                min="0"
+                                max="100"
+                                value="50"
+                                step="1"
+                                label="bbn"
+                                list="tickmarks"
+                            />
+                            <datalist id="tickmarks">
+                                <option value="0" label="0"></option>
+                                <option value="10"></option>
+                                <option value="20"></option>
+                                <option value="30"></option>
+                                <option value="40"></option>
+                                <option value="50"></option>
+                                <option value="60"></option>
+                                <option value="70"></option>
+                                <option value="80"></option>
+                                <option value="90"></option>
+                                <option value="100" label="100"></option>
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__third">
+                    <div class="form__col-6">
+                        <div class="col-3">
+                            <input type="file" id="file" name="file" />
+                            <label for="file"
+                                >File size of your documents should not exceed
+                                10MB</label
+                            >
+                        </div>
+
+                        <div class="col-3">
+                            <input
+                                class="submit"
+                                type="submit"
+                                name="submit"
+                                id="submit"
+                                value="Submit"
+                            />
+                        </div>
+
+                        <div class="col-3">
+                            <input
+                                class="checks"
+                                type="radio"
+                                name="rad"
+                                id="rad"
+                                required
+                                required
+                            />
+                            <label for="rad"
+                                >I have read and accept the Terms and
+                                Conditions</label
+                            >
+                        </div>
+                    </div>
+                    <div class="form__col-6">
+                        <div class="col-3">
+                            <input
+                                class="checks"
+                                type="checkbox"
+                                name="protect"
+                                id="protect"
+                                required
+                            />
+                            <label for="protect"
+                                >I want to protect my data by signing an
+                                NDA</label
+                            >
+                        </div>
+
+                        <div class="col-3">
+                            <input
+                                class="checks"
+                                type="checkbox"
+                                name="terms"
+                                id="terms"
+                                checked
+                                required
+                            />
+                            <label for="terms"
+                                >I have read and accept the Terms and
+                                Conditions</label
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

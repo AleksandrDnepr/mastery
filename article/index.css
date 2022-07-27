@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.author {
+    color: red;
+}
+.articleTitle {
+    text-align: center;
+}
+.picture {
+    max-width: 100%;
+    align-content: center;
+}
+
+figcaption > ul {
+    list-style: square;
+}
+
+.firstLetter {
+    float: left;
+    padding-right: 10px;
+}
+
+li {
+    color: red;
+}
+li span {
+    color: black;
+}
+
+.container {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.column-second {
+    display: flex;
+}
+
+.container .column {
+    padding: 5px;
+}
+.column-second_item {
+    padding: 5px;
+    /* border-style:dotted;
+    border-width: 1px; */
+    width: 50%;
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: 67%;
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 33%;
+}
+
+.where {
+    color: white;
+}
+
+.where__header{
+    margin-left: -10px;
+    background-color: red;
+    height: 30px;
+    text-align: center;
+top: 10px;
+/* box-shadow: 3px 3px #00856f; */
+box-shadow: 0px 5px 5px 0px  #00856f;
+}
+
+
+.whereList {
+    margin-bottom: 0px;
+padding: 1opx;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.whereList-item{
+    color: white;
+    padding: 10px;
+}
+.where-to{
+    margin-top: 0px;
+    padding: 10px;
+}
+
+.center {
+    border-width: 1px;
+    border-right-style: dotted;
+    border-left-style: dotted;
+}
+
+.dotted {
+    margin: 10px;
+    border-width: 1px;
+    border-bottom-style: dotted;
+    border-top-style: dotted;
+}
