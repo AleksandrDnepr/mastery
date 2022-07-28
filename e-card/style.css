@@ -1,195 +1,205 @@
 body {
-    font-size: 16px;
-    background: #e5e5e5;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  background: #e5e5e5;
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
-
-
 .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-color: var(--main-background-color);
-    font-family: 'Inter';
-    overflow: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: var(--main-background-color);
+  font-family: "Inter";
+  overflow: auto;
 }
 
 .container .col-2 {
-    background: #111111;
-    height: 100%;
-    border-radius: 0px 50px 0px 0px;
-    min-width: 290px;
-    width: 290px;
+  background: #111111;
+  height: 100%;
+  border-radius: 0px 50px 0px 0px;
+  min-width: 290px;
+  width: 290px;
 }
 
 .left-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .menu-list {
-    flex: 1;
+  flex: 1;
 }
 
 .title {
-    padding-top: 3rem;
-    color: #ffffff;
-    text-align: center;
+  padding-top: 3rem;
+  color: #ffffff;
+  text-align: center;
 }
 
 .menu-list {
-    padding-top: 3rem;
+  padding-top: 3rem;
 }
 
 .left-menu label span {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .left-menu label img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .left-menu label {
-    display: inline-flex;
-    align-items: center;
+  display: inline-flex;
+  align-items: center;
 }
 
 .active {
-    border-left: 5px solid green;
-    color: #ffffff;
+  border-left: 5px solid green;
+  color: #ffffff;
 }
 
 .user-info {
-    color: #ffffff;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  color: #ffffff;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .user-info p {
-    margin: 0;
+  margin: 0px;
 }
 
 .menu-item {
-    color: #babec8;
-    padding: 1.5rem 0 1.5rem 0;
+  color: #babec8;
+  padding: 1.5rem 0 1.5rem 0;
 }
 
 .menu-item-title {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .menu-item-title label {
-    display: inline-flex;
-    align-items: center;
+  display: inline-flex;
+  align-items: center;
 }
 
 .menu-item-title label span {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .menu-item-title a {
-    text-decoration: none;
-    color: #ffffff; 
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .bank-card {
-    width: 315px;
-    height: 184px;
-    background: linear-gradient(138.85deg, #0acf83 20.79%, #0bb967 83.47%);
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
-    border-radius: 12px;
-    color: #ffffff;
-    margin: 10px;
+  width: 315px;
+  height: 184px;
+  background: linear-gradient(138.85deg, #0acf83 20.79%, #0bb967 83.47%);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  color: #ffffff;
+  margin: 10px;
 }
 
 .bank-card .row {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .bank-card_log {
-    padding: 1rem;
+  padding: 1rem;
 }
 
-.col-4 p{
-    margin: 5px;
+.col-4 p {
+  margin: 5px;
 }
 
-.col-3 p{
-    margin: 5px;
+.col-3-user-logo {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  max-width: 25%;
 }
 
-.col-12 p{
-margin: 5px;
+.user-data {
+  margin: 7px;
+}
+
+.col-3 p {
+  margin: 5px;
+}
+
+.col-12 p {
+  margin: 5px;
 }
 
 .bank-card_empty {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 315px;
-    padding: 3rem 0 3rem 0;
-    align-items: center;
-    border: 2px dashed #6b6f7b;
-    border-radius: 12px;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 315px;
+  padding: 3rem 0 3rem 0;
+  align-items: center;
+  border: 2px dashed #6b6f7b;
+  border-radius: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px;
 }
 
-
-.transactions-table{
-    margin: 10px;
-    background-color: white;
-    border-radius: 10px;
+.transactions-table {
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .done {
-    color: green;
+  color: green;
 }
 .pending {
-    color: orange;
+  color: orange;
 }
 
 .table {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #ffffff;
-    border-collapse: collapse;
-    border-radius: 30px 30px 0px 0px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-radius: 30px 30px 0px 0px;
 }
 
 .upRow {
-    font-size: 16px;
-    font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .headTable {
-    border-bottom: solid black;
-    font-size: 18px;
+  border-bottom: solid black;
+  font-size: 18px;
 }
 
 tr td {
-    padding: 5px;
-    text-align: left;
+  padding: 5px;
+  text-align: left;
 }
 
 tr th {
-    padding: 8px;
-    text-align: left;
-    visibility: center;
+  border-bottom: 0.7px gray;
+  border-bottom-style: dashed;
+  padding: 8px;
+  text-align: left;
+  visibility: center;
 }
 
 .dot {
-    writing-mode: tb-rl;
-    text-align: center;
+  writing-mode: tb-rl;
+  text-align: center;
 }
 
-#input{
-    margin: 10px;
+#input {
+  margin: 10px;
 }
 
-.col-4{
-    margin: 10px;
+.col-4 {
+  margin: 10px;
 }
